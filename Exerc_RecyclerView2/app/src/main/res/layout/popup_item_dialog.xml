@@ -3,38 +3,33 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:layout_height="match_parent">
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="20dp"
-        android:text="Países"
+        android:text="Title"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <Button
-        android:id="@+id/buttonAddPais"
+    <EditText
+        android:id="@+id/txtPais"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Adicionar País"
-        app:layout_constraintBottom_toTopOf="@+id/itensRecycler"
-        app:layout_constraintTop_toBottomOf="@+id/textView">
-
-    </Button>
-
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/itensRecycler"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
         android:layout_margin="20dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:hint="País"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/buttonAddPais"
-        tools:listitem="@layout/list_card_view" />
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
+    <EditText
+        android:id="@+id/txtContinente"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:hint="Continente"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtPais" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
